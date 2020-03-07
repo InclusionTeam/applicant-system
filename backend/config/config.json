@@ -2,14 +2,18 @@
   "development": {
     "username": "postgres",
     "password": null,
-    "database": "testdb",
+    "database": "forms_development",
     "host": "127.0.0.1",
     "port": 5432,
     "dialect": "postgres"
   },
   "test": {
-    "dialect": "sqlite",
-    "storage": "data.test.sqlite3"
+    "username": "postgres",
+    "password": null,
+    "database": "forms_test",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
   },
   "production": {
     "use_env_variable": "DATABASE_URL"

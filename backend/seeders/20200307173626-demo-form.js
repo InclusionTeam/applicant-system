@@ -2,7 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.bulkInsert('Reservations', [
+    return queryInterface.bulkInsert('Forms', [
       {
         name: 'John Cena',
         phone: '9175393093',
@@ -20,14 +20,14 @@ module.exports = {
         education: 'Bachelors degree in journalism',
         collegemajor: 'Journalism',
         collegelocation: 'Caracas, Venezuela',
-        isemployed: 0,
+        isemployed: false,
         employer: 'N/A',
-        military: 0,
+        military: false,
         income: '$0-$25,000',
-        laptop: 1,
+        laptop: true,
         whyinterested: 'Because I need a job',
         howheard: 'Heard in Google',
-        skilllevel: Intermediate,
+        skilllevel: 'Intermediate',
         createdAt: new Date(),
         updatedAt: new Date()
       }
@@ -35,6 +35,6 @@ module.exports = {
   },
 
   down: (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete('Reservations', null, {});
+    return queryInterface.bulkDelete('Forms', null, {});
   }
 };
