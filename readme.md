@@ -1,1 +1,0 @@
-# Inclusion applicant management system
