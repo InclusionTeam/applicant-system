@@ -10,7 +10,7 @@ module.exports = {
         city: 'Bronx',
         state: 'NY',
         zip: '10467',
-        birthdate: new Date('04 Apr 1985 10:10:00 GMT-0400'),
+        birthdate: new Date('21 Apr 1985 10:10:00 GMT-0400'),
         gender: 'Male',
         ethnicity: 'Hispanic',
         linkedin: 'https://google.com',

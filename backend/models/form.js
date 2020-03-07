@@ -40,7 +40,7 @@ module.exports = (sequelize, DataTypes) => {
         city: req.body.city,
         state: req.body.state,
         zip: req.body.zip,
-        birthdate: new Date(req.body.date),
+        birthdate: new Date(req.body.birthdate).toISOString(),
         gender: req.body.gender,
         ethnicity: req.body.ethnicity,
         linkedin: req.body.linkedin,
