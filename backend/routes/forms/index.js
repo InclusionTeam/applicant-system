@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const { Forms } = require('../../models');
+const cors = require('cors');
+const { Form } = require('../../models');
 
 router.get('/forms', async (req, res) => {
   res.json(await Form.all());
