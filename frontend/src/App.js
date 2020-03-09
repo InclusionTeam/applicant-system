@@ -1,15 +1,20 @@
 import React, { Component } from "react";
 // import logo from './logo.svg';
 // import "./App.css";
-import Form from "./Components/Form";
-import "boottrap/dist/css/boostrap.min.css";
+import Forms from "./Components/Forms";
+import Submitted from "./Components/Submitted";
+import { BrowserRouter, Route } from "react-router-dom";
+// import "bootstrap/dist/css/boostrap.min.css";
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <Form></Form>
-      </div>
+      <BrowserRouter>
+        <div>
+          <Route path="/form-create" component={Forms} />
+          <Route path="/form-submitted" component={Submitted} />
+        </div>
+      </BrowserRouter>
     );
   }
 }
