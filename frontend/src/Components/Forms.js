@@ -68,7 +68,7 @@ class Forms extends Component {
         <Form onSubmit={this.handleSubmit}>
           <Form.Group controlId="formBasicName">
             <Form.Label>Name:</Form.Label>
-            <Form.Control type="email" name="name" placeholder="Enter full name" value={this.state.name} onChange={this.handleChange} />
+            <Form.Control type="text" name="name" placeholder="Enter full name" value={this.state.name} onChange={this.handleChange} />
           </Form.Group>
           <Form.Group controlId="formBasicPhone">
             <Form.Label>Phone:</Form.Label>
