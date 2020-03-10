@@ -10,7 +10,10 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div>
+        <div className="container">
+          <div className="page-header">
+            <h1>Testing</h1>
+          </div>
           <Route path="/form-create" component={Forms} />
           <Route path="/form-submitted" component={Submitted} />
         </div>
